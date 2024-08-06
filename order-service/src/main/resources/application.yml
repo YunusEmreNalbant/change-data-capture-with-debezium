@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order_service
+    username: root
+    password: 123123123
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  kafka:
+    bootstrap-servers: localhost:29092
+    consumer:
+      group-id: order-group
+      auto-offset-reset: earliest
+    producer:
+      retries: 0
+    template:
+      default-topic: order-created
