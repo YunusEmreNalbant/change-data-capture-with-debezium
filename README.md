@@ -1,4 +1,4 @@
-# CDC Debezium and Kafka
+# CDC with Debezium and Kafka
 This project demonstrates the integration of Kafka and Debezium with Spring Boot. It is designed to showcase how to capture changes from a PostgreSQL database and process them through Kafka.
 
 ## Overview
